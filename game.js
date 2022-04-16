@@ -23,12 +23,14 @@ enter.addEventListener('click', function(){
         Status.innerHTML ="YOU LOSE!";
         Status.style.backgroundColor ="pink";
         Status.style.color="red";
+        update.innerHTML="";
         gnum.disabled =true;
         enter.disabled =true;
         reSET();
     }
     else if(gnum.value ==guessNum){
         Status.innerHTML ="YOU WON!";
+        update.innerHTML="";
         Status.style.backgroundColor ="green";
         Status.style.color="yellow";
         gnum.disabled =true;
