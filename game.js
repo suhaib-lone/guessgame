@@ -78,7 +78,7 @@ function reSET(){
     resetbtn.addEventListener('click',newGame);
 }
 
-//ON RESET EVENT LISTNER
+// ON RESET EVENT LISTNER
 
 function newGame(){
     guessCount=1;
