@@ -18,7 +18,9 @@ function lowORhi(){
 }
 
 function checkGuess(){
-    const guesses=Number(gnum.value);
+    //here i edited
+    if(e.key==='Enter'){
+        const guesses=Number(gnum.value);
     if(guessCount===1){
         Guessed.textContent="Previous Guess: ";
     }
@@ -54,6 +56,8 @@ function checkGuess(){
             update.innerHTML ="Number too low!";
         }
     }
+    }
+    
 
     guessCount++;
     gnum.value="";
@@ -64,7 +68,7 @@ function checkGuess(){
 
 //ON SUBMIT EVENT LISTNER
 
-enter.addEventListener('click', checkGuess);
+enter.addEventListener('click' || 'keypress', checkGuess(e);
 
 //RESET FUNCTION TO RESET THE GAME
 
