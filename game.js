@@ -18,14 +18,13 @@ function lowORhi(){
 }
 
 function checkGuess(){
-    //here i edited
-    if(e.key==='Enter'){
-        const guesses=Number(gnum.value);
+
+    const guesses=Number(gnum.value);
     if(guessCount===1){
         Guessed.textContent="Previous Guess: ";
     }
     preNums.textContent+=guesses + ' ';
-
+    
     if(guessCount>10){
         Status.innerHTML ='YOU LOSE!';
         Status.style.backgroundColor ='pink';
@@ -36,7 +35,7 @@ function checkGuess(){
     else if(gnum.value<1 || gnum.value>100){
         update.innerHTML="GUESS CORRECT NUMS";
     }
-
+    
     else if(gnum.value ==guessNum){
         Status.innerHTML ='YOU WON!';
         Status.style.color='yellow';
@@ -48,17 +47,17 @@ function checkGuess(){
         Status.textContent ='wrong';
         Status.style.color='red';
         Status.style.backgroundColor ='pink';
-
+    
         if(gnum.value >guessNum){
             update.innerHTML ="Number too high!";
         }
         else{
             update.innerHTML ="Number too low!";
         }
-    }
+    
     }
     
-
+    
     guessCount++;
     gnum.value="";
     gnum.focus();
