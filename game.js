@@ -18,7 +18,11 @@ function lowORhi(){
 }
 
 function checkGuess(){
+<<<<<<< HEAD
 
+=======
+    //here i edited
+>>>>>>> 4990491 (added the enter key option to check the guess)
     const guesses=Number(gnum.value);
     if(guessCount===1){
         Guessed.textContent="Previous Guess: ";
@@ -54,8 +58,13 @@ function checkGuess(){
         else{
             update.innerHTML ="Number too low!";
         }
+<<<<<<< HEAD
     
     }
+=======
+    }
+
+>>>>>>> 4990491 (added the enter key option to check the guess)
     
     
     guessCount++;
@@ -67,7 +76,12 @@ function checkGuess(){
 
 //ON SUBMIT EVENT LISTNER
 
-enter.addEventListener('click' || 'keypress', checkGuess(e);
+enter.addEventListener('click', checkGuess);
+gnum.addEventListener("keyup", function (e) {
+    if (e.keyCode === 13) {
+      enter.click();
+    }
+});
 
 //RESET FUNCTION TO RESET THE GAME
 
