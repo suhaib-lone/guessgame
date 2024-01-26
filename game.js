@@ -18,11 +18,7 @@ function lowORhi(){
 }
 
 function checkGuess(){
-<<<<<<< HEAD
 
-=======
-    //here i edited
->>>>>>> 4990491 (added the enter key option to check the guess)
     const guesses=Number(gnum.value);
     if(guessCount===1){
         Guessed.textContent="Previous Guess: ";
@@ -58,14 +54,9 @@ function checkGuess(){
         else{
             update.innerHTML ="Number too low!";
         }
-<<<<<<< HEAD
-    
-    }
-=======
-    }
 
->>>>>>> 4990491 (added the enter key option to check the guess)
     
+    }
     
     guessCount++;
     gnum.value="";
